@@ -12,13 +12,13 @@
 	 </context-param>
 
   	<servlet>
-        <servlet-name>Stock</servlet-name>
+        <servlet-name>Harassment</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Stock</servlet-name>
+        <servlet-name>Harassment</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     

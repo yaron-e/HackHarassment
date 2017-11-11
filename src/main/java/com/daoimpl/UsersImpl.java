@@ -6,6 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
 import com.daoapi.UsersDao;
 import com.entities.Users;
 
@@ -23,6 +24,7 @@ public class UsersImpl implements UsersDao{
 		return true;
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<Users> list() {
 		return session.getCurrentSession().createQuery("from Users").list();
 	}
