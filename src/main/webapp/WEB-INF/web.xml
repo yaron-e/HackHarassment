@@ -39,10 +39,6 @@
     	<servlet-name>WebService</servlet-name>
     	<url-pattern>/WebService</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-    	<servlet-name>Register</servlet-name>
-    	<url-pattern>/Register</url-pattern>
-    </servlet-mapping>
     
     <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
