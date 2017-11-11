@@ -19,7 +19,6 @@ public class UsersImpl implements UsersDao{
 	SessionFactory session;
 	
 	public boolean saveOrUpdate(Users users) {
-		// TODO Auto-generated method stub
 		session.getCurrentSession().saveOrUpdate(users);
 		return true;
 	}
@@ -38,6 +37,8 @@ public class UsersImpl implements UsersDao{
 		
 		return true;
 	}
-	
-	
+
+	public Users get(String username) {
+		return (Users) session.getCurrentSession().createQuery("from Users where username=?1").setParameter("1", username).uniqueResult();
+	}	
 }

@@ -16,10 +16,32 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+  	<servlet>
+  		<description>
+  		</description>
+  		<display-name>WebService</display-name>
+  		<servlet-name>WebService</servlet-name>
+  		<servlet-class>com.controllers.WebService</servlet-class>
+  	</servlet>
+  	<servlet>
+  		<description>
+  		</description>
+  		<display-name>Register</display-name>
+  		<servlet-name>Register</servlet-name>
+  		<servlet-class>com.controllers.Register</servlet-class>
+  	</servlet>
 
     <servlet-mapping>
         <servlet-name>Harassment</servlet-name>
         <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>WebService</servlet-name>
+    	<url-pattern>/WebService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>Register</servlet-name>
+    	<url-pattern>/Register</url-pattern>
     </servlet-mapping>
     
     <listener>
