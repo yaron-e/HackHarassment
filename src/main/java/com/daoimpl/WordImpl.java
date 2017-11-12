@@ -48,7 +48,7 @@ public class WordImpl implements WordDao{
 	public Word getWordForUser(Word w) {
 		return (Word) session.getCurrentSession()
 				.createQuery("from Word where username=?1 and word=?2")
-				.setParameter("username", w.getUsername())
+				.setParameter("1", w.getUsername())
 				.setParameter("2", w.getWord())
 				.uniqueResult();
 	}

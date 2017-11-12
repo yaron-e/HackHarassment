@@ -26,6 +26,10 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 		<property name="url" value="jdbc:mysql://localhost:3306/hack" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
+<!-- 		<property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
+<!-- 		<property name="url" value="jdbc:mysql://hack.clxe9cxoezc5.us-east-1.rds.amazonaws.com:3306/" /> -->
+<!-- 		<property name="username" value="yeidelma" /> -->
+<!-- 		<property name="password" value="password" /> -->
 	</bean>
 
 	<!-- Session Factory Declaration -->

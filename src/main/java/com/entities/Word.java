@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="word")
+@Table(name="Word")
 public class Word {
 	
 	public Word() {
