@@ -10,4 +10,4 @@ Lets win.
 ## URL
 URL may change later
 
- * hackharassment.us-east-2.elasticbeanstalk.com 
+ * http://hack.us-east-1.elasticbeanstalk.com/
